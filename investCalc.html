@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Investment Growth Calculator - Track and visualize your financial growth">
+    <title>Investment Growth Calculator</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Investment Growth Calculator</h1>
+    </header>
+
+    <section id="calculator">
+        <label for="amount">Investment Amount ($):</label>
+        <input type="number" id="amount" required>
+
+        <label for="years">Number of Years:</label>
+        <input type="number" id="years" required>
+
+        <label for="rate">Growth Rate (%):</label>
+        <input type="number" id="rate" required>
+
+        <label for="topup">Top Up ($):</label>
+        <input type="number" id="topup">
+
+        <label for="frequency">Frequency of Contribution:</label>
+        <select id="frequency">
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="half-yearly">Half-Yearly</option>
+            <option value="yearly">Yearly</option>
+        </select>
+
+        <button onclick="calculateInvestment()">Calculate</button>
+        <button onclick="clearFields()">Clear</button>
+    </section>
+
+    <canvas id="investmentChart"></canvas>
+
+    <div id="ad-space">
+        <!-- Google AdSense Ad Code -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3174113791390802"
+     crossorigin="anonymous"></script>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
