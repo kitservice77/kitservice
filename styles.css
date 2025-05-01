@@ -1,27 +1,77 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
     text-align: center;
 }
 
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Calculator Section */
 section {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin: auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Input Fields & Dropdown */
 input, select {
     margin: 10px 0;
-    padding: 8px;
+    padding: 10px;
     width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
 }
 
+/* Input Focus Effect */
+input:focus, select:focus {
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+
+/* Buttons */
 button {
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    padding: 12px;
+    background: #ff4081;
+    color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: #ff79b0;
+}
+
+/* Chart Container */
+canvas {
+    margin-top: 20px;
+}
+
+/* Ad Space */
+#ad-space {
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
