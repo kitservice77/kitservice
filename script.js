@@ -49,5 +49,5 @@ function clearFields() {
         window.investmentChartInstance.destroy();
     }
 
-    window.investmentChartInstance = new Chart(ctx, { ... });
+   // window.investmentChartInstance = new Chart(ctx, { ... });
 }
